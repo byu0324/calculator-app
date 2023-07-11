@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="calculator">
+    <header>
+      <span class="title">calc</span>
+      <div class="theme">
+        <span>THEME</span>
+        <div class="theme-switch">
+          <div class="number">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+          <div class="switch">
+            <input type="radio" name="theme" id="first" checked>
+            <label for="first"></label>
+            <input type="radio" name="theme" id="second">
+            <label for="second"></label>
+            <input type="radio" name="theme" id="third">
+            <label for="third"></label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="result">
+        <div class="previousNum"></div>
+        <div class="currentNum">0</div>
+      </div>
+      <div class="calc-btns">
+        <button class="num">7</button>
+        <button class="num">8</button>
+        <button class="num">9</button>
+        <button class="delete">DEL</button>
+        <button class="num">4</button>
+        <button class="num">5</button>
+        <button class="num">6</button>
+        <button class="operation" data-oper="+">+</button>
+        <button class="num">1</button>
+        <button class="num">2</button>
+        <button class="num">3</button>
+        <button class="operation" data-oper="-">-</button>
+        <button class="num">.</button>
+        <button class="num">0</button>
+        <button class="operation" data-oper="/">/</button>
+        <button class="operation" data-oper="*">&times;</button>
+        <button class="reset">RESET</button>
+        <button class="calculate">=</button>
+      </div>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
